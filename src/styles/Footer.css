@@ -1,0 +1,87 @@
+/* Main footer styling */
+.footer {
+    background-color: #11146b; /* Black background */
+    color: #fff; /* White text */
+    padding: 2rem; /* Space inside the footer */
+    text-align: center;
+    position: relative;
+  }
+  
+  /* Footer Logo and Website Name */
+  .footer-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem; /* Space between logo and name */
+    margin-bottom: 1.5rem; /* Space below logo */
+  }
+  
+  .footer-logo-img {
+    width: 150px; /* Logo size */
+    height: 70px;
+    border-radius: 50%; /* Circular logo */
+  }
+  
+  .footer-website-name {
+    font-size: 1.8rem;
+    font-weight: bold;
+  }
+  
+  /* Footer Navigation Links */
+  .footer-links {
+    list-style: none; /* Remove bullet points */
+    display: flex; /* Arrange links in a single row */
+    gap: 2rem; /* Space between links */
+    padding: 0;
+    margin-bottom: 1rem; /* Space below links */
+  }
+  
+  .footer-links li a,
+  .contact-button {
+    text-decoration: none; /* Remove underline for links */
+    color: #fff; /* White text */
+    font-size: 1rem;
+    transition: color 0.3s ease; /* Smooth color transition */
+  }
+  
+  .contact-button {
+    background-color: transparent; /* Button blends with background */
+    border: 1px solid #fff; /* White border */
+    padding: 0.5rem 1rem; /* Adds space inside the button */
+    border-radius: 5px; /* Smooth corners */
+    cursor: pointer; /* Show pointer on hover */
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .contact-button:hover {
+    background-color: #02114155; /* Highlight button on hover */
+    color: #333; /* Change text color */
+  }
+  
+  /* Footer Contact Details */
+  .footer-contact {
+    font-size: 1rem;
+    line-height: 1.6;
+    text-align: left;
+    margin-top: 1rem;
+  }
+  
+  /* Footer Bottom Styling */
+  .footer-bottom {
+    margin-top: 1.5rem;
+    font-size: 0.9rem;
+    color: #bbb; /* Slightly lighter text for contrast */
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .footer-content {
+      flex-direction: column; /* Stack content vertically on smaller screens */
+      align-items: center;
+    }
+  
+    .footer-contact {
+      text-align: center; /* Center align contact details */
+    }
+  }
+  

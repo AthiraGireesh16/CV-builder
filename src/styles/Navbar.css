@@ -1,0 +1,64 @@
+
+.navbar {
+    position: absolute;
+    top: 0;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    padding: 15px 30px;
+    z-index: 10;
+  
+    /* Animation setup */
+    opacity: 0;
+    transform: translateY(-30px);
+    animation: fadeSlideDown 1s ease-in-out forwards;
+    animation-delay: 0.2s;
+  }
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px; /* Space between navbar items */
+  }
+  
+  .nav-links a {
+    color: white; /* Adjust text color for visibility */
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    transition: color 0.3s; /* Smooth hover effect */
+  }
+  
+  .nav-links a:hover {
+    color: #020a13; /* Change color on hover */
+  }
+  
+  .logo {
+    font-weight: bold;
+    font-size: 20px;
+    color: white;
+    margin-right: auto; /* Push logo to the left */
+  }
+  
+
+
+  
+  /* Keyframes for fade + slide down */
+  @keyframes fadeSlideDown {
+    from {
+      opacity: 0;
+      transform: translateY(-30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .logo-image {
+    width: 200px; /* Adjust the width as needed */
+    height: 80px; /* Maintain aspect ratio */
+    display: block; /* Ensures the image aligns properly */
+  }
+  

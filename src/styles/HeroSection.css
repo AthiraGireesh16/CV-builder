@@ -1,0 +1,67 @@
+.hero-section {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    background-image: url('C:\Users\athir\Desktop\res\resume-builder\public\hero.webp'); /* ✅ Use relative path from public folder */
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    overflow: hidden;
+  }
+
+  .hero-content {
+    background-color: rgba(6, 42, 88, 0.6);
+    padding: 20px 40px;
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+    max-width: 700px;
+  
+    /* Add initial state for animation */
+    opacity: 0;
+    transform: translateY(50px);
+    animation: fadeMoveUp 1s ease-in-out forwards;
+    animation-delay: 0.3s;
+  }
+  
+  /* Animate button separately for stagger effect */
+  .fade-in-delay-3 {
+    opacity: 0;
+    transform: translateY(50px);
+    animation: fadeMoveUp 1s ease-in-out forwards;
+    animation-delay: 0.9s;
+  }
+  
+  @keyframes fadeMoveUp {
+    from {
+      opacity: 0;
+      transform: translateY(50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Button styling */
+  .cta-button {
+    background-color: #11b0d8;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+    transition: background-color 0.6s ease, transform 0.3s ease;
+  }
+  
+  .cta-button:hover {
+    background-color: #46cae170;
+    transform: scale(1.05);
+  }
+  

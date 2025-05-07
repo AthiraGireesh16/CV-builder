@@ -1,0 +1,84 @@
+.importance-of-cv {
+  padding: 2rem 0; /* Add space around the section */
+}
+
+/* Grid layout for two sections per row */
+.grid-layout {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Two sections per row */
+  gap: 2rem; /* Space between rows and columns */
+  padding: 0 2rem; /* Add left and right space between the grid and the screen edges */
+  box-sizing: border-box; /* Prevents overlap by including padding in width calculation */
+}
+
+/* Content container for individual sections */
+.content-container {
+  background: linear-gradient(135deg, #f9f9f9, #e0eaff); /* Gradient for section background */
+  border-radius: 10px; /* Smooth corners for visual appeal */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Depth effect with shadow */
+  padding: 1.5rem;
+  transition: opacity 1.5s ease-out, transform 1.5s ease-out;
+  opacity: 0; /* Fade-in initialization */
+  transform: translateY(20px); /* Start with a downward shift */
+}
+
+.content-container.fade-in {
+  opacity: 1;
+  transform: translateY(0); /* Reset position when faded in */
+}
+
+/* Heading styles */
+.section-heading {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+/* Paragraph and content styles */
+p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* Two-column layout for image and text */
+.two-column-layout {
+  display: flex;
+  flex-wrap: nowrap; /* Prevent stacking */
+  gap: 2rem; /* Space between columns */
+  align-items: center; /* Align items vertically */
+}
+
+/* Column styles */
+.column {
+  flex: 1 1 50%; /* Equal width for columns */
+  max-width: 48%; /* Ensure consistent alignment */
+}
+
+/* Image column styling */
+.image-column img {
+  width: 100%; /* Set image width to fill the container */
+  height: 200px; /* Set a fixed height for uniformity */
+  object-fit: cover; /* Ensure the image scales and crops to maintain aspect ratio */
+  border-radius: 10px; /* Smooth corners for a consistent style */
+  transition: transform 0.5s ease-in-out; /* Smooth zoom transition */
+}
+.image-column img:hover {
+  transform: scale(1.1); /* Zoom the image to 110% */
+}
+/* Text column styling */
+.text-column {
+  font-size: 1rem;
+  line-height: 1.6; /* Improves readability */
+}
+
+/* Responsive layout for smaller screens */
+@media (max-width: 768px) {
+  .grid-layout {
+    grid-template-columns: 1fr; /* Single column layout for smaller screens */
+    padding:0 1rem
+  }
+
+  .content-container {
+    max-width: 100%; /* Full width for smaller screens */
+  }
+}

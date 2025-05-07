@@ -1,0 +1,116 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f7f9fc;
+    color: #333;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .template-professional {
+    max-width: 900px;
+    margin: 20px auto;
+    background: #ffffff;
+    padding: 25px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    line-height: 1.6;
+  }
+  
+  .resume-header {
+    text-align: center;
+    border-bottom: 2px solid #e0e0e0;
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+  }
+  
+  .profile-image img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+  }
+  
+  .name {
+    font-size: 2em;
+    font-weight: bold;
+  }
+  
+  .title {
+    font-size: 1.2em;
+    color: #555;
+  }
+  
+  .contact-info {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    font-size: 0.95em;
+  }
+  
+  .section {
+    margin-bottom: 20px;
+  }
+  
+  .section h2 {
+    font-size: 1.4em;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 5px;
+  }
+  
+  .resume-content {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .left-section {
+    width: 40%;
+    border-right: 1px solid #ddd;
+    padding-right: 20px;
+  }
+  
+  .right-section {
+    width: 60%;
+    padding-left: 20px;
+  }
+  
+  .skills-list {
+    list-style: disc;
+    padding-left: 20px;
+  }
+  
+  .experience-item {
+    margin-bottom: 15px;
+  }
+  
+  .job-title {
+    font-size: 1.2em;
+    font-weight: bold;
+  }
+  
+  .link {
+    text-decoration: none;
+    color: #0b4684;
+  }
+  
+  .link:hover {
+    color: #021e3c;
+  }
+  
+  @media print {
+    .template-professional {
+      background: #ffffff !important;
+      box-shadow: none !important;
+      margin: 0;
+      padding: 15px;
+    }
+  
+    .resume-content {
+      display: block;
+    }
+  
+    .left-section, .right-section {
+      width: 100%;
+      padding: 0;
+      border: none;
+    }
+  }
+  

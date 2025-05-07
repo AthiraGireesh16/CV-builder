@@ -1,0 +1,75 @@
+/* Main section styling */
+.why-our-resume-builder {
+    padding: 2rem 2rem; /* Space around the section */
+    margin-top: 2rem; /* Space between this section and the previous one */
+    background: url('https://media.istockphoto.com/id/1284541657/vector/abstract-background-of-gradient-stripes.jpg?s=612x612&w=0&k=20&c=lio6yk2L3_IypQkzJI_Pt_SwiA11FFvu1JaNd1ijhEY=');
+    border-radius: 10px; /* Smooth corners */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  }
+  
+  /* Section heading */
+  .section-heading {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: #fcfcfc;
+  }
+  
+  /* Intro text styling */
+  .intro-text {
+    text-align: center;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #ffffff;
+    margin-bottom: 2rem;
+  }
+  
+  /* Features container */
+  .features {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem; /* Space between feature cards */
+    justify-content: space-around; /* Distribute features evenly */
+  }
+  
+  /* Individual feature styling */
+  .feature {
+    flex: 1 1 calc(33% - 2rem); /* Three features per row */
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  /* Hover effect for features */
+  .feature:hover {
+    transform: translateY(-5px); /* Slight hover effect */
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15); /* Enhanced shadow on hover */
+  }
+  
+  .feature h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #222;
+  }
+  
+  .feature p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #666;
+  }
+  
+  /* Responsive layout for smaller screens */
+  @media (max-width: 768px) {
+    .features {
+      flex-direction: column; /* Stack features vertically */
+      gap: 1.5rem;
+    }
+  
+    .feature {
+      flex: 1 1 100%; /* Full width for smaller screens */
+    }
+  }
+  

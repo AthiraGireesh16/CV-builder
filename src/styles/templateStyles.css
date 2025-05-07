@@ -1,0 +1,165 @@
+/* CV Preview Container */
+.cv-preview-container {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  background-color: #ffffff;
+  flex-wrap: wrap;
+}
+
+/* Section 1: Default Template (Main CV) */
+.section-1 {
+  flex: 3;
+  width: 794px; /* A4 width at 96 DPI */
+  height: 1123px; /* A4 height at 96 DPI */
+  max-width: 100%;
+  background-color: #ffffff;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  page-break-inside: avoid;
+  break-inside: avoid;
+  overflow: hidden;
+  margin: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+/* Prevent conflicting height rules */
+.section-1, .work-experience {
+  height: auto;
+  min-height: 0;
+}
+
+.work-experience:last-child {
+  margin-bottom: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+/* Content area */
+#cv-content {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  background: white;
+  width: 100%;
+  overflow: hidden;
+}
+
+/* Headings */
+#cv-content h1,
+#cv-content h2,
+#cv-content h3 {
+  margin: 8px 0;
+  font-weight: 600;
+  color: #222;
+}
+
+/* Paragraphs */
+#cv-content p {
+  margin: 6px 0;
+}
+
+/* Section 2: Template Previews */
+.section-2 {
+  flex: 1;
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border: 1px solid #fcfcfc;
+}
+
+/* Buttons */
+.view-template-button,
+.download-button {
+  padding: 10px 15px;
+  background-color: #0056b3;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.view-template-button:hover,
+.download-button:hover {
+  background-color: #003d82;
+}
+
+.download-button {
+  display: block;
+  margin: 20px auto 0;
+  padding: 10px 15px;
+  height: 50px;
+  width: auto;
+  max-width: 200px;
+}
+
+/* Responsive tweaks */
+@media (max-width: 1024px) {
+  .cv-preview-container {
+    flex-direction: column;
+  }
+
+  .section-1,
+  .section-2 {
+    width: 100%;
+  }
+}
+
+/* Print-specific styles (used only if printing, not by html2pdf) */
+@media print {
+  .template-cards,
+  .section-2,
+  .download-button,
+  .no-print {
+    display: none !important;
+  }
+
+  .section-1 {
+    box-shadow: none !important;
+    border: none !important;
+    margin: 0;
+    padding: 10px;
+    width: 100% !important;
+    background: #FFFFFF;
+    page-break-inside: avoid;
+    break-inside: avoid;
+  }
+
+  #cv-content {
+    font-size: 11.5px;
+    line-height: 1.4;
+    padding: 10px;
+    margin: 0;
+    width: 100%;
+    background: white;
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+
+  #cv-content h1,
+  #cv-content h2,
+  #cv-content h3 {
+    margin: 4px 0;
+  }
+
+  #cv-content p {
+    margin: 2px 0;
+  }
+}
+
+/* Template Preview Image Styling */
+.template-image {
+  width: 10cm;
+  height: 8cm;
+  object-fit: fill;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0);
+}
+
+
+

@@ -1,0 +1,179 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f7f9fc;
+  color: #ffffff;
+  margin: 0;
+  padding: 0;
+}
+
+.template-minimal {
+  max-width: 800px;
+  margin: 20px auto;
+  background: #ffffff;
+  border: 1px solid #ffffff;
+  border-radius: 8px;
+  padding: 20px 30px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  line-height: 1.6;
+}
+
+.header {
+  text-align: center;
+  border-bottom: 2px solid #ffffff;
+  padding-bottom: 15px;
+  margin-bottom: 20px;
+}
+
+.name {
+  font-size: 2em;
+  font-weight: bold;
+  color: #222;
+  margin: 0;
+}
+
+.title {
+  font-size: 1.2em;
+  color: #555;
+  margin-top: 5px;
+}
+
+.contact-info {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  font-size: 0.95em;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.info-item {
+  margin: 0;
+}
+
+.section {
+  margin-bottom: 25px;
+}
+.section:last-child {
+  margin-bottom: 0;
+}
+.section h2 {
+  font-size: 1.4em;
+  border-bottom: 2px solid #fdfdfd;
+  margin-bottom: 10px;
+  padding-bottom: 5px;
+  color: #333;
+}
+
+.section-content {
+  font-size: 1em;
+  color: #444;
+}
+
+.edu-item,
+.experience-item,
+.project-item {
+  margin-bottom: 15px;
+}
+
+.edu-degree {
+  font-size: 1.1em;
+  font-weight: bold;
+  color: #333;
+}
+
+.edu-detail {
+  font-size: 0.95em;
+  color: #555;
+}
+
+.job-title {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.job-description,
+.project-item p {
+  font-size: 0.95em;
+  color: #555;
+  margin: 5px 0;
+}
+
+.skills-list,
+.languages-list {
+  list-style: disc;
+  padding-left: 20px;
+  margin: 0;
+}
+
+.skills-list li,
+.languages-list li {
+  font-size: 0.95em;
+  color: #444;
+  margin-bottom: 5px;
+}
+
+
+.link {
+  text-decoration: none;
+  color: #000000;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.link:hover {
+  color: #0b4684;
+}
+
+.link-button {
+  background: none;
+  border: none;
+  color: #040507;
+  font-weight: 500;
+  cursor: pointer;
+  padding: 0;
+  transition: color 0.3s ease;
+}
+
+.link-button:hover {
+  color: #021e3c;
+}
+
+.icon-link {
+  color: #021e3c;
+  font-size: 1.2em;
+}
+
+.icon-link:hover {
+  color: #021e3c;
+}
+
+@media print {
+  body {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+    margin: 0;
+    padding: 0;
+  }
+  .template-minimal {
+    page-break-inside: avoid;
+    width: 100%;
+    max-width: 800px; /* or adjust as needed */
+    margin: auto;
+    padding: 20px;
+    font-size: 12px; /* reduce font size if needed */
+  }
+
+  .section {
+    page-break-inside: avoid;
+  }
+
+  .header, .contact-info, .section-content, .experience-item, .project-item, .edu-item, .skills-list, .languages-list {
+    page-break-inside: avoid;
+  }
+}
+
+
+
